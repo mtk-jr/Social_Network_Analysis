@@ -140,7 +140,7 @@ def main():
     if args.csv:
         csv_path = args.csv
     else:
-        csv_path = os.path.join("data", "sample_interbank_network.csv")
+        csv_path = "sample_interbank_network.csv"
 
     print(f"\n📂 Loading interbank network from {csv_path}")
     G = load_network_from_csv(csv_path)
